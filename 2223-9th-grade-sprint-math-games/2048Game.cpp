@@ -15,26 +15,37 @@ void newGameStart()
 		}
 	}
 }
-
-int main()
+bool DoMove(int liner, int column, int nliner, int ncolumn)
 {
-	char buttonCommand[128];
-	buttonCommand['d'] = 0;
-	buttonCommand['s'] = 1;
-	buttonCommand['a'] = 2;
-	buttonCommand['w'] = 3;
-	newGameStart();
-	while (true)
+	if (nliner < 0 || ncolumn < 0 || nliner > 4 || ncolumn >= 4 || (borders[liner][column] != borders[nliner][ncolumn] and borders[nliner][ncolumn] != 0))
 	{
-		char commands;
-		cin >> commands;
-		if (commands == 'n')
+		return false;
+	}
+	else
+	{
+		return true;
+}
+
+	int main()
+	{
+		char buttonCommand[128];
+		buttonCommand['d'] = 0;
+		buttonCommand['s'] = 1;
+		buttonCommand['a'] = 2;
+		buttonCommand['w'] = 3;
+		newGameStart();
+		while (true)
 		{
-			newGameStart();
+			char commands;
+			cin >> commands;
+			if (commands == 'n')
+			{
+				newGameStart();
+			}
+			else if (commands == 'q')
+			{
+				break;
+			}
+			cout << "When the code is ready here will be the output";
 		}
-		else if (commands == 'q')
-		{
-			break;
-		}
-		cout << "When the code is ready here will be the output";
 	}
