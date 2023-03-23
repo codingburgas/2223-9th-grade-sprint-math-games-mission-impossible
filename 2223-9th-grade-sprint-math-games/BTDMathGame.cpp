@@ -79,7 +79,7 @@ void gameRules()
 	system("Color ");
 	cout << endl;
 	cout << endl;
-	//the initials of our game
+	//the initials 
 	cout << setw(120) << "10101    011011  10010   " << endl;
 	cout << setw(121) << "10   10    10    10   01  " << endl;
 	cout << setw(120) << "01010      01    01   10 " << endl;
