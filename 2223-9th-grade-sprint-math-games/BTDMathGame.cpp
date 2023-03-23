@@ -8,6 +8,19 @@ using namespace std;
 
 int index = 2;
 
+const string Problems_List_Easy[4] = { "(1001 * 0010) / 0011 = ?         "/*  (9 * 2) / 3 = 6  */,
+										   "(1111 / 0011) * (0010 + 0011) = ?"/*  (15 / 3) * (2 + 3) = 25  */,
+										   "(1100 * 1010) + 0010 = ?         "/*  (12 * 10) + 2 = 122  */,
+										   "(1101 * 0010) - 1111 = ?         "/*  (13 * 2) - 15 = 1*/ };
+
+const string Answer_List_Easy[4] = { "6",
+									 "25",
+									 "122",
+									 "1" };
+
+unsigned Random_index = rand() % 4;
+string word = Problems_List_Easy[Random_index];
+string answer = Answer_List_Easy[Random_index];
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_ENTER 13
@@ -195,10 +208,40 @@ void checkIndex()
 	default:index = 2; Main_menu1(); break;
 	}
 }
-void startGameMenu()
+
+void print_level_easy(string word, unsigned Random_index, string answer)
 {
-	//the game creation proccess will be done here
+	system("cls");
+	string Func_answer;
+
+	cout << setw(95) << char(218); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(43) << word << char(179) << endl;
+	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(95) << char(192); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+
+	cout << setw(95) << "What is the answer(" << answer << "): ";
+	cin >> Func_answer;
+	if (Func_answer == answer)
+	{
+		cout << "Congrats! You can go to the next problem." << endl;
+		Sleep(999);
+		system("pause");
+		exit(0); // will change when the game is updated
+	}
+	else
+	{
+		cout << "Sorry.Try again.";
+		Sleep(999);
+		system("cls");
+		print_level_easy(word, Random_index, answer);
+	}
+
 }
+
+
 void rulesMenu()
 {
 	system("cls");
@@ -210,7 +253,7 @@ void check_for_current_menu()
 {
 	switch (index)
 	{
-	case 2: startGameMenu(); break; // start game
+	case 2: print_level_easy(word, Random_index, answer); break; // start game
 	case 1: rulesMenu(); break; //enter rules menu
 	case 0: exit(0); break; //exit the code
 	}
@@ -218,13 +261,14 @@ void check_for_current_menu()
 
 int main()
 {
+
 	loadingMenu();
 	system("cls");
 	Main_menu1();
 	while (true)
 	{
-		char n = _getch();
-		switch (n)
+		char key_input = _getch();
+		switch (key_input)
 		{
 		case KEY_UP: index++; checkIndex(); break;
 		case KEY_DOWN: index--; checkIndex(); break;
