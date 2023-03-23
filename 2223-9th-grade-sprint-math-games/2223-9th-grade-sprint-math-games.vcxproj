@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2048Game.cpp" />
+    <ClCompile Include="BTDMathGame.cpp" />
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -18,6 +18,6 @@
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2048Game.cpp" />
+    <ClCompile Include="BTDMathGame.cpp" />
   </ItemGroup>
 </Project>
