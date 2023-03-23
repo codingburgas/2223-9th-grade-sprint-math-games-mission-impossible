@@ -100,7 +100,7 @@ void gameRules()
 	cout << endl;
 }
 
-void menu()
+void topMenuPart()
 {
 	cout << setw(100) << " ____   _______  ____   _______  ____   _______  ____                                                                                              _______  ____   _______  ____   _______  ____   _______  " << endl;
 	cout << setw(100) << "|    | |  _    ||    | |  _    ||    | |  _    ||    |                                                                                            |  _    ||    | |  _    ||    | |  _    ||    | |  _    | " << endl;
@@ -126,7 +126,7 @@ void menu()
 void Main_menu1()//case - arrow at start game
 {
 	system("cls");
-	menu();
+	topMenuPart();
 	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
 	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
 	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
@@ -147,7 +147,7 @@ void Main_menu1()//case - arrow at start game
 void Main_menu2()//case - arrow at rules menu
 {
 	system("cls");
-	menu();
+	topMenuPart();
 	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
 	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
 	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
@@ -163,6 +163,57 @@ void Main_menu2()//case - arrow at rules menu
 	cout << setw(119) << "Down arrow - down" << endl;
 	cout << setw(127) << "Enter key - select option" << endl;
 	cout << setw(133) << "Backspace - return to last page" << endl;
+}
+void Main_menu3()//case - arrow at start game
+{
+	system("cls");
+	topMenuPart();
+	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(24) << "Start game" << setw(12) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(19) << "Rules" << setw(17) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(18) << "-> Exit" << setw(18) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(95) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+	cout << setw(115) << "Controls: Up arrow - up" << endl;
+	cout << setw(119) << "Down arrow - down" << endl;
+	cout << setw(127) << "Enter key - select option" << endl;
+	cout << setw(133) << "Backspace - return to last page" << endl;
+}
+
+void checkIndex()
+{
+	switch (index)
+	{
+	case 2: Main_menu1(); break;
+	case 1: Main_menu2(); break;
+	case 0: Main_menu3(); break;
+	default:index = 2; Main_menu1(); break;
+	}
+}
+void startGameMenu()
+{
+	//the game creation proccess will be done here
+}
+void rulesMenu()
+{
+	system("cls");
+	gameRules();
+}
+
+
+void check_for_current_menu()
+{
+	switch (index)
+	{
+	case 2: startGameMenu(); break; // start game
+	case 1: rulesMenu(); break; //enter rules menu
+	case 0: exit(0); break; //exit the code
+	}
 }
 
 int main()
