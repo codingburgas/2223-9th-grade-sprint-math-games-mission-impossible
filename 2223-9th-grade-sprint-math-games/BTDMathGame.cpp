@@ -218,5 +218,18 @@ void check_for_current_menu()
 
 int main()
 {
-	//the rest of the code will be added soon.
+	loadingMenu();
+	system("cls");
+	Main_menu1();
+	while (true)
+	{
+		char n = _getch();
+		switch (n)
+		{
+		case KEY_UP: index++; checkIndex(); break;
+		case KEY_DOWN: index--; checkIndex(); break;
+		case KEY_ENTER: check_for_current_menu(); break;
+		case KEY_BACKSPACE: checkIndex(); break;
+		}
+	}
 }
