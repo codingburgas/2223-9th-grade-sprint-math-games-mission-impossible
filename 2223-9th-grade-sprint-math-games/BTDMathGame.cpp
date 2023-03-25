@@ -214,26 +214,36 @@ void print_level_easy(string word, unsigned Random_index, string answer)
 	system("cls");
 	string Func_answer;
 
-	cout << setw(95) << char(218); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(191) << endl;
-	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(43) << word << char(179) << endl;
-	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(95) << char(192); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+	cout << setw(45) << setw(8) << "Binary" << setw(15) << "Decimal" << setw(55) << char(218); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(45) << setw(20) << "0000     ->     0" << setw(58) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(45) << setw(20) << "0001     ->     1" << setw(58) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(45) << setw(20) << "0010     ->     2" << setw(58) << char(179) << setw(43) << word << char(179) << endl;
+	cout << setw(45) << setw(20) << "0011     ->     3" << setw(58) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(45) << setw(20) << "0100     ->     4" << setw(58) << char(179) << setw(44) << char(179) << endl;
+	cout << setw(45) << setw(20) << "0101     ->     5" << setw(58) << char(192); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(217) << endl;
+	cout << setw(45) << setw(20) << "0110     ->     6" << endl;
+	cout << setw(45) << setw(20) << "0111     ->     7" << endl;
+	cout << setw(45) << setw(20) << "1000     ->     8" << endl;
+	cout << setw(45) << setw(20) << "1001     ->     9" << endl;
+	cout << setw(45) << setw(21) << "1010     ->     10" << endl;
+	cout << setw(45) << setw(21) << "1011     ->     11" << endl;
+	cout << setw(45) << setw(21) << "1100     ->     12" << endl;
+	cout << setw(45) << setw(21) << "1101     ->     13" << endl;
+	cout << setw(45) << setw(21) << "1110     ->     14" << endl;
+	cout << setw(45) << setw(21) << "1111     ->     15";
 
-	cout << setw(95) << "What is the answer(" << answer << "): ";
+	cout << setw(85) << "What is the answer(" << answer << "): ";
 	cin >> Func_answer;
 	if (Func_answer == answer)
 	{
-		cout << "Congrats! You can go to the next problem." << endl;
+		cout << setw(120) << "Congrats! You can go to the next problem." << endl;
 		Sleep(999);
 		system("pause");
 		exit(0); // will change when the game is updated
 	}
 	else
 	{
-		cout << "Sorry.Try again.";
+		cout << setw(110) << "Sorry.Try again.";
 		Sleep(999);
 		system("cls");
 		print_level_easy(word, Random_index, answer);
