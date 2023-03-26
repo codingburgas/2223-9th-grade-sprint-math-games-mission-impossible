@@ -1,7 +1,7 @@
-<h1 align="center">Word Game</h1>
-<h6 align="center">PeakPerformers</h6>
+<h1 align="center">MathGame</h1>
+<h6 align="center">Mission Impossible</h6>
 <p align="center">
-   
+   <img src="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-mission-impossible/blob/master/Documents/logo.jpg">
 </p>
 
 
@@ -25,8 +25,7 @@
 
  ## 🎬 Demo of the project
 
-
- 
+<img src="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-mission-impossible/blob/master/Documents/demo.game.jpg">
    
 ## ⚙ Installation
 ```
