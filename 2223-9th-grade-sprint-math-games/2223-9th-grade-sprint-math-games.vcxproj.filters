@@ -13,11 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pictures">
+      <UniqueIdentifier>{76c42297-9937-4779-b3c5-8f6a9280074d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BTDMathGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\logo.jpg">
+      <Filter>Pictures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -130,6 +130,9 @@
     <ClCompile Include="BTDMathGame.cpp" />
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\logo.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
