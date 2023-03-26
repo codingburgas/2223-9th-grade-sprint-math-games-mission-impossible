@@ -100,3 +100,88 @@ void gameRules()
 	cout << endl;
 	cout << endl;
 }
+
+void topMenuPart()
+{
+	cout << setw(100) << " ____   _______  ____   _______  ____   _______  ____                                                                                              _______  ____   _______  ____   _______  ____   _______  " << endl;
+	cout << setw(100) << "|    | |  _    ||    | |  _    ||    | |  _    ||    |                                                                                            |  _    ||    | |  _    ||    | |  _    ||    | |  _    | " << endl;
+	cout << setw(100) << " |   | | | |   | |   | | | |   | |   | | | |   | |   |                                                                                            | | |   | |   | | | |   | |   | | | |   | |   | | | |   | " << endl;
+	cout << setw(100) << " |   | | | |   | |   | | | |   | |   | | | |   | |   |                                                                                            | | |   | |   | | | |   | |   | | | |   | |   | | | |   | " << endl;
+	cout << setw(100) << " |   | | |_|   | |   | | |_|   | |   | | |_|   | |   |                                                                                            | |_|   | |   | | |_|   | |   | | |_|   | |   | | |_|   | " << endl;
+	cout << setw(100) << " |   | |       | |   | |       | |   | |       | |   |                                                                                            |       | |   | |       | |   | |       | |   | |       | " << endl;
+	cout << setw(100) << " |___| |_______| |___| |_______| |___| |_______| |___|                                                                                            |_______| |___| |_______| |___| |_______| |___| |_______| " << endl;
+	cout << endl;
+	cout << endl;
+	cout << setw(112) << "10101    011011  10010   " << endl;
+	cout << setw(113) << "10   10    10    10   01  " << endl;
+	cout << setw(155) << " _____________________________________________________________________________________ 01010      01    01   10 ________________________________________________________________________________________________" << endl;
+	cout << setw(112) << "01   10    10    10   10 " << endl;
+	cout << setw(112) << "10   01    01    10  01  " << endl;
+	cout << setw(112) << "101010     01    01100   " << endl;
+	cout << endl;
+	cout << setw(107) << "Binary to Decimal";
+	cout << endl;
+	cout << endl;
+}
+
+void Main_menu1()//case - arrow at start game
+{
+	system("cls");
+	topMenuPart();
+	cout << setw(80) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(24) << "-> Start game" << setw(12) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(19) << "Rules" << setw(17) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(18) << "Exit" << setw(18) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+	cout << setw(100) << "Controls: Up arrow - up" << endl;
+	cout << setw(104) << "Down arrow - down" << endl;
+	cout << setw(112) << "Enter key - select option" << endl;
+	cout << setw(118) << "Backspace - return to last page" << endl;
+
+}
+void Main_menu2()//case - arrow at rules menu
+{
+	system("cls");
+	topMenuPart();
+	cout << setw(80) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(24) << "Start game" << setw(12) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(19) << "-> Rules" << setw(17) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(18) << "Exit" << setw(18) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+	cout << setw(100) << "Controls: Up arrow - up" << endl;
+	cout << setw(104) << "Down arrow - down" << endl;
+	cout << setw(112) << "Enter key - select option" << endl;
+	cout << setw(118) << "Backspace - return to last page" << endl;
+}
+void Main_menu3()//case - arrow at start game
+{
+	system("cls");
+	topMenuPart();
+	cout << setw(80) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(24) << "Start game" << setw(12) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(19) << "Rules" << setw(17) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(18) << "-> Exit" << setw(18) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(179) << setw(36) << char(179) << endl;
+	cout << setw(80) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
+	cout << setw(100) << "Controls: Up arrow - up" << endl;
+	cout << setw(104) << "Down arrow - down" << endl;
+	cout << setw(112) << "Enter key - select option" << endl;
+	cout << setw(118) << "Backspace - return to last page" << endl;
+}
