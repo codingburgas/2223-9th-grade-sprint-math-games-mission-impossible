@@ -8,19 +8,7 @@ using namespace std;
 
 int index = 2;
 
-const string Problems_List_Easy[4] = { "(1001 * 0010) / 0011 = ?         "/*  (9 * 2) / 3 = 6  */,
-										   "(1111 / 0011) * (0010 + 0011) = ?"/*  (15 / 3) * (2 + 3) = 25  */,
-										   "(1100 * 1010) + 0010 = ?         "/*  (12 * 10) + 2 = 122  */,
-										   "(1101 * 0010) - 1111 = ?         "/*  (13 * 2) - 15 = 1*/ };
 
-const string Answer_List_Easy[4] = { "6",
-									 "25",
-									 "122",
-									 "1" };
-
-unsigned Random_index = rand() % 4;
-string word = Problems_List_Easy[Random_index];
-string answer = Answer_List_Easy[Random_index];
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_ENTER 13
@@ -64,7 +52,6 @@ void loadingMenu()
 
 void tableForHelp()
 {
-	system("cls");
 	system("Color ");
 	cout << setw(8) << "Binary" << setw(15) << "Decimal" << endl;
 	cout << endl;
@@ -106,184 +93,10 @@ void gameRules()
 	//how to play
 	cout << setw(167) << "-----------------------------------------------------> !HOW TO PLAY! <-----------------------------------------------------" << endl;
 	cout << endl;
-	cout << setw(150) << "The program will give you a single number in binary number system along with a table to help you. " << endl;
-	cout << setw(190) << "You shall gather a word by answering equations. After converting the number to a decimal number system you need to calculate the resulting equation and if it is correct you move on to the next level." << endl;
+	cout << setw(150) << "The program will give you a equation in binary number system along with a table to help you. " << endl;
+	cout << setw(190) << "You shall gather a word by compleating equations. After converting the number to a decimal number system you need to calculate the resulting equation and if it is correct you move on to the next level." << endl;
+	cout << setw(120) << "YOU HAVE ONLY TWO LIVES!!!";
 	cout << endl;
 	cout << endl;
 	cout << endl;
-}
-
-void topMenuPart()
-{
-	cout << setw(100) << " ____   _______  ____   _______  ____   _______  ____                                                                                              _______  ____   _______  ____   _______  ____   _______  " << endl;
-	cout << setw(100) << "|    | |  _    ||    | |  _    ||    | |  _    ||    |                                                                                            |  _    ||    | |  _    ||    | |  _    ||    | |  _    | " << endl;
-	cout << setw(100) << " |   | | | |   | |   | | | |   | |   | | | |   | |   |                                                                                            | | |   | |   | | | |   | |   | | | |   | |   | | | |   | " << endl;
-	cout << setw(100) << " |   | | | |   | |   | | | |   | |   | | | |   | |   |                                                                                            | | |   | |   | | | |   | |   | | | |   | |   | | | |   | " << endl;
-	cout << setw(100) << " |   | | |_|   | |   | | |_|   | |   | | |_|   | |   |                                                                                            | |_|   | |   | | |_|   | |   | | |_|   | |   | | |_|   | " << endl;
-	cout << setw(100) << " |   | |       | |   | |       | |   | |       | |   |                                                                                            |       | |   | |       | |   | |       | |   | |       | " << endl;
-	cout << setw(100) << " |___| |_______| |___| |_______| |___| |_______| |___|                                                                                            |_______| |___| |_______| |___| |_______| |___| |_______| " << endl;
-	cout << endl;
-	cout << endl;
-	cout << setw(127) << "10101    011011  10010   " << endl;
-	cout << setw(128) << "10   10    10    10   01  " << endl;
-	cout << setw(180) << " ____________________________________________________________________________________________________ 01010      01    01   10 _________________________________________________________________________" << endl;
-	cout << setw(127) << "01   10    10    10   10 " << endl;
-	cout << setw(127) << "10   01    01    10  01  " << endl;
-	cout << setw(127) << "101010     01    01100   " << endl;
-	cout << endl;
-	cout << setw(122) << "Binary to Decimal";
-	cout << endl;
-	cout << endl;
-}
-
-void Main_menu1()//case - arrow at start game
-{
-	system("cls");
-	topMenuPart();
-	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(24) << "-> Start game" << setw(12) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(19) << "Rules" << setw(17) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(18) << "Exit" << setw(18) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
-	cout << setw(115) << "Controls: Up arrow - up" << endl;
-	cout << setw(119) << "Down arrow - down" << endl;
-	cout << setw(127) << "Enter key - select option" << endl;
-	cout << setw(133) << "Backspace - return to last page" << endl;
-
-}
-void Main_menu2()//case - arrow at rules menu
-{
-	system("cls");
-	topMenuPart();
-	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(24) << "Start game" << setw(12) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(19) << "-> Rules" << setw(17) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(18) << "Exit" << setw(18) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
-	cout << setw(115) << "Controls: Up arrow - up" << endl;
-	cout << setw(119) << "Down arrow - down" << endl;
-	cout << setw(127) << "Enter key - select option" << endl;
-	cout << setw(133) << "Backspace - return to last page" << endl;
-}
-void Main_menu3()//case - arrow at start game
-{
-	system("cls");
-	topMenuPart();
-	cout << setw(95) << char(218); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(191) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(21) << "THE GAME" << setw(15) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(24) << "Start game" << setw(12) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(19) << "Rules" << setw(17) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(18) << "-> Exit" << setw(18) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(179) << setw(36) << char(179) << endl;
-	cout << setw(95) << char(192); for (int i = 1; i < 36; i++) { cout << char(196); } cout << char(217) << endl << endl << endl;
-	cout << setw(115) << "Controls: Up arrow - up" << endl;
-	cout << setw(119) << "Down arrow - down" << endl;
-	cout << setw(127) << "Enter key - select option" << endl;
-	cout << setw(133) << "Backspace - return to last page" << endl;
-}
-
-void checkIndex()
-{
-	switch (index)
-	{
-	case 2: Main_menu1(); break;
-	case 1: Main_menu2(); break;
-	case 0: Main_menu3(); break;
-	default:index = 2; Main_menu1(); break;
-	}
-}
-
-void print_level_easy(string word, unsigned Random_index, string answer)
-{
-	system("cls");
-	string Func_answer;
-
-	cout << setw(45) << setw(8) << "Binary" << setw(15) << "Decimal" << setw(55) << char(218); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(191) << endl;
-	cout << setw(45) << setw(20) << "0000     ->     0" << setw(58) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(45) << setw(20) << "0001     ->     1" << setw(58) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(45) << setw(20) << "0010     ->     2" << setw(58) << char(179) << setw(43) << word << char(179) << endl;
-	cout << setw(45) << setw(20) << "0011     ->     3" << setw(58) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(45) << setw(20) << "0100     ->     4" << setw(58) << char(179) << setw(44) << char(179) << endl;
-	cout << setw(45) << setw(20) << "0101     ->     5" << setw(58) << char(192); for (int i = 1; i < 44; i++) { cout << char(196); } cout << char(217) << endl;
-	cout << setw(45) << setw(20) << "0110     ->     6" << endl;
-	cout << setw(45) << setw(20) << "0111     ->     7" << endl;
-	cout << setw(45) << setw(20) << "1000     ->     8" << endl;
-	cout << setw(45) << setw(20) << "1001     ->     9" << endl;
-	cout << setw(45) << setw(21) << "1010     ->     10" << endl;
-	cout << setw(45) << setw(21) << "1011     ->     11" << endl;
-	cout << setw(45) << setw(21) << "1100     ->     12" << endl;
-	cout << setw(45) << setw(21) << "1101     ->     13" << endl;
-	cout << setw(45) << setw(21) << "1110     ->     14" << endl;
-	cout << setw(45) << setw(21) << "1111     ->     15";
-
-	cout << setw(85) << "What is the answer(" << answer << "): ";
-	cin >> Func_answer;
-	if (Func_answer == answer)
-	{
-		cout << setw(120) << "Congrats! You can go to the next problem." << endl;
-		Sleep(999);
-		system("pause");
-		exit(0); // will change when the game is updated
-	}
-	else
-	{
-		cout << setw(110) << "Sorry.Try again.";
-		Sleep(999);
-		system("cls");
-		print_level_easy(word, Random_index, answer);
-	}
-
-}
-
-
-void rulesMenu()
-{
-	system("cls");
-	gameRules();
-}
-
-
-void check_for_current_menu()
-{
-	switch (index)
-	{
-	case 2: print_level_easy(word, Random_index, answer); break; // start game
-	case 1: rulesMenu(); break; //enter rules menu
-	case 0: exit(0); break; //exit the code
-	}
-}
-
-int main()
-{
-
-	loadingMenu();
-	system("cls");
-	Main_menu1();
-	while (true)
-	{
-		char key_input = _getch();
-		switch (key_input)
-		{
-		case KEY_UP: index++; checkIndex(); break;
-		case KEY_DOWN: index--; checkIndex(); break;
-		case KEY_ENTER: check_for_current_menu(); break;
-		case KEY_BACKSPACE: checkIndex(); break;
-		}
-	}
 }
