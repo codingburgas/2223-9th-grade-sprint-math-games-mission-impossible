@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>  
+<head>
 
 </head>
 
 <body>
-    <h1>Here will be our README.md file</h1>
+    <img src = "logo.png">
 </body>
 </html>
