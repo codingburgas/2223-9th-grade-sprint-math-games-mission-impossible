@@ -217,7 +217,7 @@ void print_level_easy()
 	cout << setw(10) << "|(1001 * 0010) / 0011 = ?|" << endl;
 	cout << setw(10) << "|                        |" << endl;
 	cout << setw(10) << "|________________________|" << endl;
-	cout << setw(15) << "Enter your answer:(6) ";
+	cout << setw(15) << "Enter your answer: ";//the answer is 6
 	cin >> answOne;
 	if (answOne == 6)
 	{
@@ -251,7 +251,7 @@ void print_level_easy()
 	cout << setw(10) << "|(1111 / 0011) * (0010 + 0011) = ?|" << endl;
 	cout << setw(10) << "|                                 |" << endl;
 	cout << setw(10) << "|_________________________________|" << endl;
-	cout << setw(10) << "Enter your answer:(25) ";
+	cout << setw(10) << "Enter your answer: ";//the answer is 25
 	cin >> answTwo;
 	if (answTwo == 25)
 	{
@@ -285,7 +285,7 @@ void print_level_easy()
 	cout << setw(10) << "|    (1100 * 1010) + 0010 = ?     |" << endl;
 	cout << setw(10) << "|                                 |" << endl;
 	cout << setw(10) << "|_________________________________|" << endl;
-	cout << "Enter you answer:(122) ";
+	cout << "Enter you answer: ";// the answer is 122
 	cin >> answTree;
 	if (answTree == 122)
 	{
@@ -318,7 +318,7 @@ void print_level_easy()
 	cout << setw(10) << "|     (1101 * 0010) - 1111 = ?    |" << endl;
 	cout << setw(10) << "|                                 |" << endl;
 	cout << setw(10) << "|_________________________________|" << endl;
-	cout << "Enter you answer:(11) ";
+	cout << "Enter you answer: ";//the answer is 11
 	cin >> answFour;
 	if (answFour == 11)
 	{
@@ -351,7 +351,7 @@ void print_level_easy()
 	cout << setw(10) << "|((1110 / 0010) + (0110 + 0001)) / 0111 = ?    |" << endl;
 	cout << setw(10) << "|                                              |" << endl;
 	cout << setw(10) << "|______________________________________________|" << endl;
-	cout << "Enter your answer(2): ";
+	cout << "Enter your answer: ";//the answer is 2
 	cin >> answFive;
 	if (answFive == 2)
 	{
@@ -384,7 +384,7 @@ void print_level_easy()
 	cout << setw(10) << "|((((1111 / 0011) + (1111 / 0101)) + 1111) + 1) / 4 = ?    |" << endl;
 	cout << setw(10) << "|                                                          |" << endl;
 	cout << setw(10) << "|__________________________________________________________|" << endl;
-	cout << "Enter your answer(6): ";
+	cout << "Enter your answer: ";//the answer is 6
 	cin >> answSix;
 	if (answSix == 6)
 	{
