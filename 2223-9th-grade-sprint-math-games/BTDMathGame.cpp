@@ -185,3 +185,294 @@ void Main_menu3()//case - arrow at start game
 	cout << setw(112) << "Enter key - select option" << endl;
 	cout << setw(118) << "Backspace - return to last page" << endl;
 }
+
+
+void checkIndex()
+{
+	switch (index)
+	{
+	case 2: Main_menu1(); break;
+	case 1: Main_menu2(); break;
+	case 0: Main_menu3(); break;
+	default:index = 2; Main_menu1(); break;
+	}
+}
+
+void print_level_easy()
+{
+	system("cls");
+	int answOne, answTwo, answTree, answFour, answFive, answSix;
+	string word;
+	cout << setw(20) << "Table for help!" << endl;
+	cout << endl;
+	cout << "0000     ->     0|" << setw(20) << "0001     ->     1|" << setw(20) << "0010     ->     2|" << endl;
+	cout << "0011     ->     3|" << setw(20) << "0100     ->     4|" << setw(20) << "0101     ->     5|" << endl;
+	cout << "0110     ->     6|" << setw(20) << "0111     ->     7|" << setw(20) << "1000     ->     8|" << endl;
+	cout << "1001     ->     9|" << setw(20) << "1010     ->     10|" << setw(20) << "1011     ->     11|" << endl;
+	cout << "1100     ->     12|" << setw(20) << "1101     ->     13|" << setw(20) << "1110     ->     14|" << setw(20) << "1111     ->     15" << endl;
+	cout << endl;
+	cout << endl;
+	cout << setw(16) << "_________________________" << endl;
+	cout << setw(10) << "|                        |" << endl;
+	cout << setw(10) << "|(1001 * 0010) / 0011 = ?|" << endl;
+	cout << setw(10) << "|                        |" << endl;
+	cout << setw(10) << "|________________________|" << endl;
+	cout << setw(15) << "Enter your answer:(6) ";
+	cin >> answOne;
+	if (answOne == 6)
+	{
+		cout << endl;
+		cout << "Well done here is your first letter: B" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answOne;
+		if (answOne == 6)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	cout << endl;
+	cout << endl;
+	cout << setw(16) << "__________________________________" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|(1111 / 0011) * (0010 + 0011) = ?|" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|_________________________________|" << endl;
+	cout << setw(10) << "Enter your answer:(25) ";
+	cin >> answTwo;
+	if (answTwo == 25)
+	{
+		cout << endl;
+		cout << "Well done here is your second letter: i" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answTwo;
+		if (answTwo == 25)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	cout << endl;
+	cout << endl;
+	cout << setw(16) << "__________________________________" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|    (1100 * 1010) + 0010 = ?     |" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|_________________________________|" << endl;
+	cout << "Enter you answer:(122) ";
+	cin >> answTree;
+	if (answTree == 122)
+	{
+		cout << endl;
+		cout << "Well done here is your third letter: n" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answTree;
+		if (answTree == 122)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	cout << endl;
+	cout << setw(16) << "__________________________________" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|     (1101 * 0010) - 1111 = ?    |" << endl;
+	cout << setw(10) << "|                                 |" << endl;
+	cout << setw(10) << "|_________________________________|" << endl;
+	cout << "Enter you answer:(11) ";
+	cin >> answFour;
+	if (answFour == 11)
+	{
+		cout << endl;
+		cout << "Well done here is your fourth letter: a" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answFour;
+		if (answFour == 11)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	cout << endl;
+	cout << setw(16) << "_______________________________________________" << endl;
+	cout << setw(10) << "|                                              |" << endl;
+	cout << setw(10) << "|((1110 / 0010) + (0110 + 0001)) / 0111 = ?    |" << endl;
+	cout << setw(10) << "|                                              |" << endl;
+	cout << setw(10) << "|______________________________________________|" << endl;
+	cout << "Enter your answer(2): ";
+	cin >> answFive;
+	if (answFive == 2)
+	{
+		cout << endl;
+		cout << "Well done here is your fifth letter: r" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answFive;
+		if (answFive == 2)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	cout << endl;
+	cout << setw(16) << "___________________________________________________________" << endl;
+	cout << setw(10) << "|                                                          |" << endl;
+	cout << setw(10) << "|((((1111 / 0011) + (1111 / 0101)) + 1111) + 1) / 4 = ?    |" << endl;
+	cout << setw(10) << "|                                                          |" << endl;
+	cout << setw(10) << "|__________________________________________________________|" << endl;
+	cout << "Enter your answer(6): ";
+	cin >> answSix;
+	if (answSix == 6)
+	{
+		cout << endl;
+		cout << "Well done here is your sixth letter: y" << endl;
+		cout << "Now continue" << endl;
+		system("pause");
+	}
+	else
+	{
+		cout << endl;
+		cout << "Almost there!";
+		cout << endl;
+		cout << "Try again:  ";
+		cin >> answSix;
+		if (answSix == 6)
+		{
+			system("pause");
+		}
+		else
+		{
+			cout << endl;
+			cout << "You lost!";
+			exit(0);
+		}
+	}
+	system("cls");
+	cout << endl;
+	cout << "Congratulations player, you have beaten the game. Now could you tell me what is the word: ";
+	cin >> word;
+	if (word == "Binary")
+	{
+		cout << endl;
+		cout << "Nice work, i am really surprised you have completed all the quations!!!";
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << " _______  _______  __    _  _______  ______    _______  _______  __   __  ___      _______  _______  ___   _______  __    _  _______ " << endl;
+		cout << "|       ||       ||  |  | ||       ||    _ |  |   _   ||       ||  | |  ||   |    |   _   ||       ||   | |       ||  |  | ||       |" << endl;
+		cout << "|       ||   _   ||   |_| ||    ___||   | ||  |  |_|  ||_     _||  | |  ||   |    |  |_|  ||_     _||   | |   _   ||   |_| ||  _____|" << endl;
+		cout << "|       ||  | |  ||       ||   | __ |   |_||_ |       |  |   |  |  |_|  ||   |    |       |  |   |  |   | |  | |  ||       || |_____ " << endl;
+		cout << "|      _||  |_|  ||  _    ||   ||  ||    __  ||       |  |   |  |       ||   |___ |       |  |   |  |   | |  |_|  ||  _    ||_____  |" << endl;
+		cout << "|     |_ |       || | |   ||   |_| ||   |  | ||   _   |  |   |  |       ||       ||   _   |  |   |  |   | |       || | |   | _____| |" << endl;
+		cout << "|_______||_______||_|  |__||_______||___|  |_||__| |__|  |___|  |_______||_______||__| |__|  |___|  |___| |_______||_|  |__||_______|" << endl;
+		cout << endl;
+		cout << endl;
+		cout << "Created by: Lazar Apostolov, Kristina Zheleva, Svetoslav Zhelev, Dimityr Georgiev";
+	}
+	else
+	{
+		cout << endl;
+		cout << "Ooops you have got it all wrong!!!";
+		exit(0);
+	}
+}
+
+void rulesMenu()
+{
+	system("cls");
+	gameRules();
+}
+
+
+void check_for_current_menu()
+{
+	switch (index)
+	{
+	case 2: print_level_easy(); break; // start game
+	case 1: rulesMenu(); break; //enter rules menu
+	case 0: exit(0); break; //exit the code
+	}
+}
+
+int main()
+{
+
+	loadingMenu();
+	system("cls");
+	Main_menu1();
+	while (true)
+	{
+		char key_input = _getch();
+		switch (key_input)
+		{
+		case KEY_UP: index++; checkIndex(); break;
+		case KEY_DOWN: index--; checkIndex(); break;
+		case KEY_ENTER: check_for_current_menu(); break;
+		case KEY_BACKSPACE: checkIndex(); break;
+		}
+	}
+}
