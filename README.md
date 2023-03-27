@@ -16,7 +16,12 @@
 
 <p align="left">     
     <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" width = 100 height = 100>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width = 100 height = 100>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png" width = 100 height = 100>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" width = 100 height = 100>
+    <img src="https://play-lh.googleusercontent.com/9kABykeGovHPy-dN19lRxxnCp8IZK3Pkl8qLFNxrEe-hhKVZeiyhTBEIRUt6t-vhxQ" width = 100 height = 100>
+    <img src="https://play-lh.googleusercontent.com/jKU64njy8urP89V1O63eJxMtvWjDGETPlHVIhDv9WZAYzsSxRWyWZkUlBJZj_HbkHA" width = 100 height = 100>
+    <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ" width = 100 height = 100>
     
 ## 📋 Description:
     
