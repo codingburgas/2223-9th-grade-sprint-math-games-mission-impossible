@@ -127,8 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BTDMathGame.cpp" />
-    <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\logo.jpg" />

@@ -18,10 +18,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2223-9th-grade-sprint-math-games.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BTDMathGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\logo.jpg">
