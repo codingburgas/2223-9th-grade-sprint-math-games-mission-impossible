@@ -24,7 +24,7 @@
 
 ## 🗎 Documents:<br>
 <hr>
-  <a href="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-mission-impossible/blob/master/Documents/Mission%20Impossible%20-%20QA%20Documentation.xlsx">QA Documentation</a>
+  <a href="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-mission-impossible/blob/master/Documents/Mission%20Impossible%20QA%20Documentation.xlsx">QA Documentation</a>
   <hr>
   <br>
   <a href="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-mission-impossible/blob/master/Documents/Mission%20impossible%20project%20documentation.docx">Documentation</a>
