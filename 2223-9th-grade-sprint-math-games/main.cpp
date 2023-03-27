@@ -50,28 +50,6 @@ void loadingMenu()
 	system("COLOR E");
 }
 
-void tableForHelp()
-{
-	system("Color ");
-	cout << setw(8) << "Binary" << setw(15) << "Decimal" << endl;
-	cout << endl;
-	cout << setw(20) << "0000     ->     0" << endl;
-	cout << setw(20) << "0001     ->     1" << endl;
-	cout << setw(20) << "0010     ->     2" << endl;
-	cout << setw(20) << "0011     ->     3" << endl;
-	cout << setw(20) << "0100     ->     4" << endl;
-	cout << setw(20) << "0101     ->     5" << endl;
-	cout << setw(20) << "0110     ->     6" << endl;
-	cout << setw(20) << "0111     ->     7" << endl;
-	cout << setw(20) << "1000     ->     8" << endl;
-	cout << setw(20) << "1001     ->     9" << endl;
-	cout << setw(21) << "1010     ->     10" << endl;
-	cout << setw(21) << "1011     ->     11" << endl;
-	cout << setw(21) << "1100     ->     12" << endl;
-	cout << setw(21) << "1101     ->     13" << endl;
-	cout << setw(21) << "1110     ->     14" << endl;
-	cout << setw(21) << "1111     ->     15";
-}
 
 void gameRules()
 {
