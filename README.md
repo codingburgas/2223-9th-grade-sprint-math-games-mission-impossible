@@ -25,7 +25,7 @@
     
 ## 📋 Description:
     
-*The game is created to improve peoples math knowledge and to help them memorise more numbers and work faster. They will be able to solve equations and find a word to finish the whole game. Good Luck!*   
+*The game is created to improve peoples math knowledge, to help them memorise more numbers and work faster. They will be able to solve equations and find a word to finish the whole game. Good Luck!*   
 
 ## 🗎 Documents:<br>
 <hr>
