@@ -1,7 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <conio.h>
-#include <stdlib.h>
 #include <Windows.h> 
 
 using namespace std;
